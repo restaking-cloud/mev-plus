@@ -24,6 +24,8 @@ func (b *BlockAggregatorService) checkBlockSources() error {
 
 	handleStatusCheck := func(module string) {
 
+		defer wg.Done()
+
 		err := b.coreClient.Call(nil, module+"_status", false, nil)
 		mu.Lock()
 		defer mu.Unlock()
