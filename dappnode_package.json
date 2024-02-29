@@ -1,12 +1,19 @@
 {
   "name": "mev-plus.public.dappnode.eth",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Restaking cloud side car execution environment",
   "type": "service",
   "author": "Blockswap Labs",
+  "contributors": "Pol Lanski & Luka Gulin",
   "categories": ["Developer tools"],
   "links": {
     "homepage": "https://restaking.cloud/"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "globalEnvs": [
+    {
+      "envs": ["EXECUTION_CLIENT_HOLESKY", "CONSENSUS_CLIENT_HOLESKY"],
+      "services": ["mevplus"]
+    }
+  ]
 }

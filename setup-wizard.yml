@@ -1,0 +1,11 @@
+version: "2"
+fields:
+  - id: ETH1_PRIVATE_KEY
+    target:
+      type: environment
+      name: ETH1_PRIVATE_KEY
+      service: mevplus
+    title: Private Key for ETH1 Manager Address
+    description: >-
+      Create a private key for a wallet and fund it with a little bit of ETH to sign transactions. 
+    required: true
