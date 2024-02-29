@@ -8,11 +8,11 @@ services:
       - "10000:10000"
     network_mode: host
     environment:
-      - BUILDER_API_ADDRESS=http://localhost:18551
-      - EXTERNAL_VALIDATOR_PROXY_ADDRESS=http://localhost:18550
-      - ETH1_PRIVATE_KEY=${PRIVATE_KEY}
-      - BEACON_NODE_URL=http://localhost:5052
-      - EXECUTION_NODE_URL=http://localhost:8545
+      - BUILDER_API_ADDRESS=
+      - EXTERNAL_VALIDATOR_PROXY_ADDRESS=
+      - ETH1_PRIVATE_KEY=
+      - BEACON_NODE_URL=
+      - EXECUTION_NODE_URL=
     restart: unless-stopped
 
 
